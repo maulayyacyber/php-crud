@@ -8,9 +8,6 @@ $db_name = "db_crud";
 //create variable connectin
 $connection = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 //checking connection
-if(!$connection)
-  {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-
-mysqli_close($connection);
+if(!$connection) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
