@@ -12,7 +12,7 @@ mysqli_stmt_bind_param($updateStatement, 'sssi', $nama, $email, $alamat, $id);
 
 $execute = mysqli_stmt_execute($updateStatement);
 
-if ($execute)) {
+if ($execute) {
 	header("Location: index.php?success-update");
 } else {
 	header("Location: index.php?error-update");
